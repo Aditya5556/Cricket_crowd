@@ -89,12 +89,12 @@ const LandingPage = () => {
         );
     };
 
-    const handleStorySubmit = (e) => {
-        e.preventDefault();
-        // Handle story submission logic here
-        alert('Story submitted successfully!');
-        e.target.reset();
-    };
+    // const handleStorySubmit = (e) => {
+    //     e.preventDefault();
+    //     // Handle story submission logic here
+    //     alert('Story submitted successfully!');
+    //     e.target.reset();
+    // };
 
     // Load different stories based on active section
     useEffect(() => {
