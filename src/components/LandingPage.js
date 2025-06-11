@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/main.css';
-import MonetizationModules from './MonetizationModules';
 import Featured from './Featured';
 import Sponsor from './Sponsor';
 
