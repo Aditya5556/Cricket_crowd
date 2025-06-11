@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/main.css';
 import MonetizationModules from './MonetizationModules';
 import Featured from './Featured';
@@ -113,12 +114,12 @@ const LandingPage = () => {
         <div className="app">
             <header className="header">
                 <nav className="nav container">
-                    <a href="#" className="logo">CricketTales</a>
+                    <Link to="/" className="logo">CricketTales</Link>
                     <ul className="nav-links">
-                        <li><a href="#" onClick={() => showSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
-                        <li><a href="#" onClick={() => showSection('submit')} className={activeSection === 'submit' ? 'active' : ''}>Submit Story</a></li>
-                        <li><a href="#" onClick={() => showSection('stories')} className={activeSection === 'stories' ? 'active' : ''}>Stories</a></li>
-                        <li><a href="#" onClick={() => showSection('monetization')} className={activeSection === 'monetization' ? 'active' : ''}>Monetization</a></li>
+                        <li><Link to="/" className={activeSection === 'home' ? 'active' : ''}>Home</Link></li>
+                        <li><Link to="/submit" className={activeSection === 'submit' ? 'active' : ''}>Submit Story</Link></li>
+                        <li><Link to="/stories" className={activeSection === 'stories' ? 'active' : ''}>Stories</Link></li>
+                        <li><Link to="/monetization" className={activeSection === 'monetization' ? 'active' : ''}>Monetization</Link></li>
                     </ul>
                 </nav>
             </header>
@@ -129,7 +130,7 @@ const LandingPage = () => {
                         <div className="container">
                             <h1>Share Your Cricket Tales</h1>
                             <p>A community-driven platform where fans share match stories, player legends, and personal cricket memories</p>
-                            <a href="#" onClick={() => showSection('submit')} className="btn btn-primary">Share Your Story</a>
+                            <Link to="/submit" className="btn btn-primary">Share Your Story</Link>
                         </div>
                     </div>
 
